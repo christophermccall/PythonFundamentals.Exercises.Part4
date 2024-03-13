@@ -12,8 +12,7 @@ def rand_num():
 
 
 def high_or_low(random):
-    onOff = True
-    while onOff:
+    while True:
         user = get_input()
         print("Your number: "+str(user))
         if user > random:
@@ -22,7 +21,7 @@ def high_or_low(random):
             print("Too Low")
         elif user == random:
             print("Correct!")
-            onOff = False
+            break
 
 
 high_or_low(rand_num())
